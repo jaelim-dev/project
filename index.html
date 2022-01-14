@@ -3,10 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <title>김재림의 Pages</title>
+    <style>                
+        *{-webkit-text-size-adjust:none; margin:0; padding:0; font-family:'Noto Sans', sans-serif, HelveticalNeue-Light,AppleSDGothicNeo; -webkit-tap-highlight-color:rgba(0,0,0,0); }
+        strong,h1,h2,h3,h4,h5,h6	{ font-family:'Noto Sans',sans-serif; font-weight:700; letter-spacing: -0.05em;  }
+        html{height:100%;}
+        html.popOpen {overflow:hidden; }
+        body{margin:0; padding:0; -webkit-text-size-adjust:100%; height:100%; position:relative; font-size:19px; line-height:30px; font-weight:400; color:#666; letter-spacing: -0.025em; }
+        body.main{min-width:1280px;}
+
+        p,h1,h2,h3,h4,h5,h6,menu,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,img{margin:0;padding:0;-webkit-text-size-adjust: 100%; vertical-align:top}
+        table,th,td{vertical-align:middle; text-align:center; }
+        button,select,input,label {cursor:pointer;font-size:14px; box-sizing: border-box; appearance: none;}
+        hr, legend, caption {display:none; }
+
+        @media screen and (max-width: 691px) {
+        button,select,input[type=radio],input[type=checkbox],label,textarea {cursor:pointer;font-size:14px; border-radius:0;-webkit-appearance:none}
+        }
+
+        /* ---[ reset html5 element ]---------------- */
+        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display: block;}
+
+        ul,ol {list-style:none;margin:0px;padding:0px;}
+        em {font-style:normal;}
+        fieldset,img {border:0 none;  }
+
+        table {border-collapse:collapse;border-spacing:0; }/*margin-top:10px;*/
+        table caption {width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}
+        table tr td span{white-space: normal;}
+        table tr td img{vertical-align:middle; }
+
+        /* ---[ links ]------------------------------- */
+        a  { box-sizing:border-box; }
+        a img {border: none;}
+        a:link,a:visited {text-decoration: none;color:#666; font-family:inherit}
+        a:hover {text-decoration:underline;}
+
+        button{position:relative;margin:0;padding:0;border:0;background:#fff;cursor:pointer;vertical-align:middle;  box-sizing:border-box;  }
+        .wrap {display:flex; align-items:center; justify-content:center; width:100%; height:100vh; background:#000;}
+        .header .header_inner {background:skyblue; padding:20px;}
+        .header .header_inner > h1 > a {color:#000; font-size:20px;}
+
+        .main {text-align:center;}
+        .main .img_cont {display:inline-block; width:300px; height:300px; border-radius:50%; overflow:hidden;}
+        .main .img_cont img {width:100%;}
+        .main > p {font-weight:700; color:#fff; margin-top:20px;}
+    </style>
 </head>
 <body>
-    <h1>상욱리는 아이폰13프로 오나다!</h1>
+    <div class="wrap">
+        <header class="header">
+        </header>
+        <main class="main">
+            <div class="img_cont">
+                <img src="images/sanguk.jpg" alt="상욱리">
+            </div>
+            <p>상욱리는 아이폰13프로 오나다!</p>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
 </body>
 </html>
