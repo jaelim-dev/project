@@ -871,7 +871,7 @@ button.close {
 		width:100%;
 	}
 	.main .thumb-list ul li article {
-		background:none;
+		background:#fff;
 	}
 	.main .thumb-list ul li article figure {
 		height: auto;
