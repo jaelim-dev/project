@@ -870,6 +870,12 @@ button.close {
 	.main {
 		width:100%;
 	}
+	.main .thumb-list ul li article {
+		background:none;
+	}
+	.main .thumb-list ul li article figure {
+		height: auto;
+	}
 	.main .thumb-list ul li {
 		margin-top:20px;
 	}
