@@ -1,0 +1,140 @@
+/*
+ * font-face : Noto Sans KR
+ */
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/NotoSansKR/NOTOSANSKR-REGULAR.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/NotoSansKR/NOTOSANSKR-MEDIUM.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 700;
+  src: url("../fonts/NotoSansKR/NOTOSANSKR-BOLD.woff2") format("woff2");
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3,
+h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby, section, summary, time,
+mark, audio, video, button, select, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;  
+	font-family: 'NotoSansKR', sans-serif;
+  font-weight: 500;
+  color: #222;
+}
+
+:before, :after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+article, aside, canvas, details, figure, figcaption,
+footer, header, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+  width: 100%;
+  letter-spacing: 0;
+}
+
+body {
+  color: #222;
+  background-color: #fff;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  vertical-align: middle;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+code {
+  white-space: pre;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+input::-webkit-input-placeholder {
+  color: #222;
+}
+
+input:-ms-input-placeholder {
+  color: #222;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #222;
+}
+
+textarea:-ms-input-placeholder {
+  color: #222;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+}
+
+.hidden {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}

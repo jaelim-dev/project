@@ -1,66 +1,319 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
-    <title>김재림의 Pages</title>
-    <style>                
-        *{-webkit-text-size-adjust:none; margin:0; padding:0; font-family:'Noto Sans', sans-serif, HelveticalNeue-Light,AppleSDGothicNeo; -webkit-tap-highlight-color:rgba(0,0,0,0); }
-        strong,h1,h2,h3,h4,h5,h6	{ font-family:'Noto Sans',sans-serif; font-weight:700; letter-spacing: -0.05em;  }
-        html{height:100%;}
-        html.popOpen {overflow:hidden; }
-        body{margin:0; padding:0; -webkit-text-size-adjust:100%; height:100%; position:relative; font-size:19px; line-height:30px; font-weight:400; color:#666; letter-spacing: -0.025em; }
-        body.main{min-width:1280px;}
-
-        p,h1,h2,h3,h4,h5,h6,menu,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,img{margin:0;padding:0;-webkit-text-size-adjust: 100%; vertical-align:top}
-        table,th,td{vertical-align:middle; text-align:center; }
-        button,select,input,label {cursor:pointer;font-size:14px; box-sizing: border-box; appearance: none;}
-        hr, legend, caption {display:none; }
-
-        @media screen and (max-width: 691px) {
-        button,select,input[type=radio],input[type=checkbox],label,textarea {cursor:pointer;font-size:14px; border-radius:0;-webkit-appearance:none}
-        }
-
-        /* ---[ reset html5 element ]---------------- */
-        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display: block;}
-
-        ul,ol {list-style:none;margin:0px;padding:0px;}
-        em {font-style:normal;}
-        fieldset,img {border:0 none;  }
-
-        table {border-collapse:collapse;border-spacing:0; }/*margin-top:10px;*/
-        table caption {width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}
-        table tr td span{white-space: normal;}
-        table tr td img{vertical-align:middle; }
-
-        /* ---[ links ]------------------------------- */
-        a  { box-sizing:border-box; }
-        a img {border: none;}
-        a:link,a:visited {text-decoration: none;color:#666; font-family:inherit}
-        a:hover {text-decoration:underline;}
-
-        button{position:relative;margin:0;padding:0;border:0;background:#fff;cursor:pointer;vertical-align:middle;  box-sizing:border-box;  }
-        .wrap {display:flex; align-items:center; justify-content:center; width:100%; height:100vh; background:#000;}
-        .header .header_inner {background:skyblue; padding:20px;}
-        .header .header_inner > h1 > a {color:#000; font-size:20px;}
-
-        .main {text-align:center;}
-        .main .img_cont {width:300px; height:300px; border-radius:50%; overflow:hidden; background:url('images/sanguk.jpg') bottom center no-repeat; background-size:cover;}
-        .main > p {font-weight:700; color:#fff; margin-top:20px;}
-    </style>
-</head>
-<body>
-    <div class="wrap">
-        <header class="header">
-        </header>
-        <main class="main">
-            <div class="img_cont"></div>
-            <p>상욱리는 아이폰13프로 오나다!</p>
-        </main>
-        <footer class="footer">
-
-        </footer>
-    </div>
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />		
+		<title>김재림의 PORTFOLIO</title>
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+		<script src="/assets/js/jquery-3.7.1.min.js"></script>
+		<script src="/assets/js/common.js"></script>
+    </head>
+	<body>
+		<div class="page">
+			<header class="header">
+				<div class="header-inner">
+					<nav class="nav">
+						<a class="default link active home" href="#home">WORK</a>
+						<a class="default link about" href="#about">ABOUT</a>					
+						<div class="mobile-menu-close"></div>
+					</nav>
+					<div class="mobile-menu"></div>
+					<a class="default link logo" href="#home">
+						<h1><img src="/assets/images/common/logo.png" alt="logo"/></h1>
+					</a>
+				</div>
+			</header>
+			<!-- header -->
+			<main class="main">
+				<article id="home">
+					<div class="content">
+						<section class="intro">			
+							<h2>안녕하세요,<br>웹퍼블리셔 김재림입니다. <a class="default link more" href="#about">READ MORE</a></h2>
+						</section>
+						<section class="thumb-list">
+							<span class="type">PORTFOLIO WORK</span>
+							<ul>
+								<li>
+									<article>
+										<figure>
+											<img src="/assets/images/work/img-pf01.jpg" alt="KB금융지주 브랜드 사이트 리뉴얼 구축">
+											<div class="list-item">KB금융지주 브랜드 사이트 리뉴얼 구축</div>
+										</figure>
+										<div class="work">
+											<h2>KB금융지주 브랜드 사이트 리뉴얼 구축</h2>
+											<p>HTML5</p><p> CSS</p><p> JavaScript</p><p>Jquery</p><p> Figma</p>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article>
+										<figure>
+											<img src="/assets/images/work/img-pf02.jpg" alt="KB금융지주 인재채용 사이트 리뉴얼 구축">
+											<div class="list-item">KB금융지주 인재채용 사이트 리뉴얼 구축</div>
+										</figure>
+										<div class="work">
+											<h2>KB금융지주 인재채용 사이트 리뉴얼 구축</h2>
+											<p>HTML5</p><p> CSS</p><p> JavaScript</p><p>Jquery</p><p> Figma</p>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article>
+										<figure>
+											<img src="/assets/images/work/img-pf03.jpg" alt="KB금융지주 캐릭터 홍보 사이트 리뉴얼 구축">
+											<div class="list-item">KB금융지주 캐릭터 홍보 사이트 리뉴얼 구축</div>
+										</figure>
+										<div class="work">
+											<h2>KB금융지주 캐릭터 홍보 사이트 리뉴얼 구축</h2>
+											<p>HTML5</p><p> CSS</p><p> JavaScript</p><p>Jquery</p><p> Figma</p>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article>
+										<figure>
+											<img src="/assets/images/work/img-pf04.jpg" alt="SKT 0한동 서비스 리뉴얼 구축">
+											<div class="list-item">SKT 0한동 서비스 리뉴얼 구축</div>
+										</figure>
+										<div class="work">
+											<h2>SKT 0한동 서비스 리뉴얼 구축</h2>
+											<p>HTML5</p><p> CSS</p><p> JavaScript</p><p>Jquery</p><p> Photoshop</p>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article>
+										<figure>
+											<img src="/assets/images/work/img-pf05.jpg" alt="신한은행 SOL 앱 머니버스 리뉴얼 구축">
+											<div class="list-item">신한은행 SOL 앱 머니버스 리뉴얼 구축</div>
+										</figure>
+										<div class="work">
+											<h2>신한은행 SOL 앱 머니버스 리뉴얼 구축</h2>
+											<p>HTML5</p><p> CSS</p><p> JavaScript</p><p>Jquery</p><p> Figma</p>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article>
+										<figure>
+											<img src="/assets/images/work/img-pf06.jpg" alt="한국신용정보원 데이터전문기관 사이트 구축">
+											<div class="list-item">한국신용정보원 데이터전문기관 사이트 구축</div>
+										</figure>
+										<div class="work">
+											<h2>한국신용정보원 데이터전문기관 사이트 구축</h2>
+											<p>HTML5</p><p> CSS</p><p> JavaScript</p><p>Jquery</p><p> Figma</p>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article>
+										<figure>
+											<img src="/assets/images/work/img-pf07.jpg" alt="현대백화점그룹 사이트 구축">
+											<div class="list-item">현대백화점그룹 사이트 구축</div>
+										</figure>
+										<div class="work">
+											<h2>현대백화점그룹 사이트 구축</h2>
+											<p>HTML5</p><p> CSS</p><p> JavaScript</p><p>Jquery</p><p> Photoshop</p>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article>
+										<figure>
+											<img src="/assets/images/work/img-pf08.jpg" alt="삼성물산 사이트 리뉴얼 구축">
+											<div class="list-item">삼성물산 사이트 리뉴얼  구축</div>
+										</figure>
+										<div class="work">
+											<h2>삼성물산 사이트 리뉴얼 구축</h2>
+											<p>HTML5</p><p> CSS</p><p> JavaScript</p><p>Jquery</p><p> Adobe XD</p>
+										</div>
+									</article>
+								</li>
+							</ul>
+						</section>
+						<div class="newlayer">
+							<ul>
+								<li id="question0">
+									<article>
+										<div class="title">
+											<b>KB금융지주 브랜드 사이트 리뉴얼 구축</b>
+											<div class="link-box">
+												<a class="more" href="https://www.kbfg.com/kor/index.jsp" target="_blank">Go to site</a>
+											</div>
+										</div>
+										<div class="subtitle">
+											<p><img src="/assets/images/common/browser.svg" alt="browser" width="25" height="25" /><span class="hidden">뷰포트 :</span> 데스크탑, 모바일, 반응형</p>
+											<p><img src="/assets/images/common/user-tie-solid.svg" alt="user-tie-solid" width="25" height="25" /><span class="hidden">작업도구 :</span> HTML5, SCSS, CSS, JavaScript, Jquery</p>
+											<p><img src="/assets/images/common/hammer-solid.svg" alt="hammer-solid" width="25" height="25" /><span class="hidden">설명 :</span>직책: 퍼블리싱 PL / 작업 기간: 2023년 4월 ~ 2023년 6월</p>
+										</div>
+										<img class="preview" src="/assets/images/work/img-pf01.jpg" alt="KB금융지주 브랜드 사이트 리뉴얼 구축" />
+									</article>
+								</li>
+								<li id="question1">
+									<article>
+										<div class="title">
+											<b>KB금융지주 인재채용 사이트 신규 구축</b>
+											<div class="link-box">
+												<a class="more" href="https://careers.kbfg.com" target="_blank">Go to site</a>
+											</div>
+										</div>
+										<div class="subtitle">
+											<p><img src="/assets/images/common/browser.svg" alt="browser" width="25" height="25" /><span class="hidden">뷰포트 :</span> 데스크탑, 모바일, 반응형</p>
+											<p><img src="/assets/images/common/user-tie-solid.svg" alt="user-tie-solid" width="25" height="25" /><span class="hidden">작업도구 :</span> HTML5, SCSS, CSS, JavaScript, Jquery</p>
+											<p><img src="/assets/images/common/hammer-solid.svg" alt="hammer-solid" width="25" height="25" /><span class="hidden">설명 :</span>직책: 퍼블리싱 PL / 작업 기간: 2023년 6월 ~ 2023년 8월</p>
+										</div>
+										<img class="preview" src="/assets/images/work/img-pf02.jpg" alt="SKB금융지주 인재채용 사이트 신규 구축" />
+									</article>
+								</li>
+								<li id="question2">
+									<article>
+										<div class="title">
+											<b>KB금융지주 캐릭터 홍보 사이트 신규 구축</b>
+											<div class="link-box">
+												<a class="more" href="https://starfriends.kbfg.com/kor" target="_blank">Go to site</a>
+											</div>
+										</div>
+										<div class="subtitle">
+											<p><img src="/assets/images/common/browser.svg" alt="browser" width="25" height="25" /><span class="hidden">뷰포트 :</span> 데스크탑, 모바일, 반응형</p>
+											<p><img src="/assets/images/common/user-tie-solid.svg" alt="user-tie-solid" width="25" height="25" /><span class="hidden">작업도구 :</span> HTML5, SCSS, CSS, JavaScript, Jquery</p>
+											<p><img src="/assets/images/common/hammer-solid.svg" alt="hammer-solid" width="25" height="25" /><span class="hidden">설명 :</span>직책: 퍼블리싱 PL / 작업 기간: 2023년 9월 ~ 2023년 11월</p>
+										</div>
+										<img class="preview" src="/assets/images/work/img-pf03.jpg" alt="KB금융지주 캐릭터 홍보 사이트 신규 구축" />
+									</article>
+								</li>
+								<li id="question3">
+									<article>
+										<div class="title">
+											<b>SKT 0한동 서비스 리뉴얼 구축</b>
+											<div class="link-box">
+												<a class="more" href="https://skt0.tworld.co.kr/appweb/html/tworld/main/M1.html?utm_source=tworld&utm_medium=mainpage&utm_campaign=quicklink&_v=20240404135051" target="_blank">Go to site</a>
+											</div>
+										</div>
+										<div class="subtitle">
+											<p><img src="/assets/images/common/browser.svg" alt="browser" width="25" height="25" /><span class="hidden">뷰포트 :</span> 모바일</p>
+											<p><img src="/assets/images/common/user-tie-solid.svg" alt="user-tie-solid" width="25" height="25" /><span class="hidden">작업도구 :</span> HTML5, SCSS, CSS, JavaScript, Jquery</p>
+											<p><img src="/assets/images/common/hammer-solid.svg" alt="hammer-solid" width="25" height="25" /><span class="hidden">설명 :</span>직책: 퍼블리싱 PL / 작업 기간: 2022년 11월 ~ 2023년 02월</p>
+										</div>
+										<img class="preview" src="/assets/images/work/img-pf04.jpg" alt="SKT 0한동 서비스 리뉴얼 구축" />
+									</article>
+								</li>
+								<li id="question4">
+									<article>
+										<div class="title">
+											<b>신한은행 SOL 머니버스 고도화 구축, 운영</b>
+											<div class="link-box">
+												<a class="more" href="https://play.google.com/store/apps/details?id=com.shinhan.sbanking&pcampaignid=web_share" target="_blank">Go to site</a>
+											</div>
+										</div>
+										<div class="subtitle">
+											<p><img src="/assets/images/common/browser.svg" alt="browser" width="25" height="25" /><span class="hidden">뷰포트 :</span> 데스크탑</p>
+											<p><img src="/assets/images/common/user-tie-solid.svg" alt="user-tie-solid" width="25" height="25" /><span class="hidden">작업도구 :</span> HTML5, SCSS, CSS, JavaScript, Jquery</p>
+											<p><img src="/assets/images/common/hammer-solid.svg" alt="hammer-solid" width="25" height="25" /><span class="hidden">설명 :</span>직책: 퍼블리싱 PA / 작업 기간: 2021년 9월 ~ 2022년 09월</p>
+										</div>
+										<img class="preview" src="/assets/images/work/img-pf05.jpg" alt="신한은행 SOL 머니버스 고도화 구축, 운영" />
+									</article>
+								</li>
+								<li id="question5">
+									<article>
+										<div class="title">
+											<b>한국신용정보원 데이터전문기관 사이트 신규 구축</b>
+											<div class="link-box">
+												<a class="more" href="https://data.kcredit.or.kr:3443/main.do" target="_blank">Go to site</a>
+											</div>
+										</div>
+										<div class="subtitle">
+											<p><img src="/assets/images/common/browser.svg" alt="browser" width="25" height="25" /><span class="hidden">뷰포트 :</span> 데스크탑</p>
+											<p><img src="/assets/images/common/user-tie-solid.svg" alt="user-tie-solid" width="25" height="25" /><span class="hidden">작업도구 :</span> HTML5, SCSS, CSS, JavaScript, Jquery</p>
+											<p><img src="/assets/images/common/hammer-solid.svg" alt="hammer-solid" width="25" height="25" /><span class="hidden">설명 :</span>직책: 퍼블리싱 PL / 작업 기간: 2021년 08월 ~ 2021년 12월</p>
+										</div>
+										<ul class="description">
+											<li></li>
+										</ul>
+										<span class="type"></span>
+										<img class="preview" src="/assets/images/work/img-pf06.jpg" alt="한국신용정보원 데이터전문기관 사이트 신규 구축" />
+									</article>
+								</li>
+								<li id="question6">
+									<article>
+										<div class="title">
+											<b>현대백화점그룹 사이트 리뉴얼 구축</b>
+											<div class="link-box">
+												<a class="more" href="https://www.ehyundai.com/newPortal/group/MAIN.do?locale=ko" target="_blank">Go to site</a>
+											</div>
+										</div>
+										<div class="subtitle">
+											<p><img src="/assets/images/common/browser.svg" alt="browser" width="25" height="25" /><span class="hidden">뷰포트 :</span> 데스크탑, 모바일 적응형</p>
+											<p><img src="/assets/images/common/user-tie-solid.svg" alt="user-tie-solid" width="25" height="25" /><span class="hidden">작업도구 :</span> HTML5, SCSS, CSS, JavaScript, Jquery</p>
+											<p><img src="/assets/images/common/hammer-solid.svg" alt="hammer-solid" width="25" height="25" /><span class="hidden">설명 :</span>직책: 퍼블리싱 PL / 작업 기간: 2021년 05월 ~ 2021년 07월</p>
+										</div>
+										<img class="preview" src="/assets/images/work/img-pf07.jpg" alt="현대백화점그룹 사이트 리뉴얼 구축" />
+									</article>
+								</li>
+								<li id="question7">
+									<article>
+										<div class="title">
+											<b>삼성물산 사이트 리뉴얼 구축</b>
+											<div class="link-box">
+												<a class="more" href="https://www.samsungcnt.com/index.do" target="_blank">Go to site</a>
+											</div>
+										</div>
+										<div class="subtitle">
+											<p><img src="/assets/images/common/browser.svg" alt="browser" width="25" height="25" /><span class="hidden">뷰포트 :</span> 데스크탑, 모바일 반응형</p>
+											<p><img src="/assets/images/common/user-tie-solid.svg" alt="user-tie-solid" width="25" height="25" /><span class="hidden">작업도구 :</span> HTML5, SCSS, CSS, JavaScript, Jquery</p>
+											<p><img src="/assets/images/common/hammer-solid.svg" alt="hammer-solid" width="25" height="25" /><span class="hidden">설명 :</span>직책: 퍼블리싱 PA / 작업 기간: 2021년 01월 ~ 2021년 03월</p>
+										</div>
+										<img class="preview" src="/assets/images/work/img-pf08.jpg" alt="삼성물산 사이트 리뉴얼 구축" />
+									</article>
+								</li>
+							</ul>
+							<button type="button" class="close" id="btnClose"><span class="hidden">Close</span><img src="/assets/images/common/times-solid.svg" alt="times-solid" width="40" height="40" /></button>
+							<div class="arrow">
+								<button type="button" class="prev" id="btnPrev"><span class="hidden">Previous</span><img src="/assets/images/common/chevron-left-solid.svg" alt="chevron-left-solid" width="60" height="60" /></button>
+								<button type="button" class="next" id="btnNext"><span class="hidden">Next</span><img src="/assets/images/common/chevron-right-solid.svg" alt="chevron-right-solid" width="60" height="60" /></button>
+							</div>
+							<div class="curtainOff"></div>
+						</div><!-- newLayer -->
+					</div>
+				</article>
+				<!-- work -->
+				<article id="about">
+					<div class="content">
+						<section class="cover">
+							<div class="myself">
+								<h3>Intro</h3>
+								<p>작업물을 설계하고 생산하는 일에 무엇보다 진지하고 즐겁게 임하는 웹 퍼블리셔 <b>김재림</b> 입니다. 직접 코드를 입력해 웹을 구현하는 작업에 큰 매력과 향상심을 느끼게 되어 이 일을 시작하였습니다. 동료와 타 파트와의 협업에서 최고의 퀄리티를 냈을때 성취감을 느낍니다. 꼼꼼함과 신속함을 장점으로 실무에 임하겠습니다. 감사합니다.</p>
+								<h3>Skills & Tools</h3>
+								<ol>
+									<li>반응형</li>
+									<li>모바일</li>
+									<li>웹표준</li>
+									<li>시맨틱 마크업</li>
+									<li>HTML5 & CSS3</li>
+									<li>SCSS</li>
+									<li>JavaScript</li>
+									<li>jQuery</li>
+									<li>Vue.js</li>
+								</ol>
+							</div>
+							<div class="mycharacter">
+								<img src="/assets/images/common/img-profile.jpg" alt="character">
+							</div>
+						</section>
+					</div>
+				</article>
+				<p class="notice">이 사이트는 최신 브라우저에 최적화되어 만들었습니다. Chrome, Safari 또는 Firefox 브라우저를 권장합니다.</p>
+			</main>
+			<footer class="footer">
+				<div class="footer-inner">
+					<span class="type">GET IN TOUCH</span>
+					<address>
+						<a href="mailto:jaelim91@naver.com?subject=&body=">jaelim91@naver.com</a>
+					</address>
+					<span class="copyright">&copy; 2024 KimJaeLim. All rights reserved.</span>
+				</div>
+			</footer>
+		</div>
+<!-- footer -->
 </body>
 </html>
